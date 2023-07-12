@@ -1,2 +1,0 @@
-sample.txt has  10093 words of wordlength 4
-sample.txt has  10093 words of wordlength 4

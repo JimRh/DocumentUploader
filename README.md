@@ -8,7 +8,7 @@
 
     python -m venv venv 
     
-   . venv/bin/activate
+   . venv\Scripts\Activate
 
 4. Install the project dependencies
     
@@ -16,7 +16,7 @@
 
 5. Run the application
 
-   flask -app app run or python app.py
+   flask -app app run 
 
    The application will run on localhost:5000
 
