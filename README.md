@@ -6,9 +6,9 @@
 
 3. Create and activate virtual environment
 
-    python3 -m venv venv 
+    python -m venv venv 
     
-   source venv/bin/activate
+   . venv/bin/activate
 
 4. Install the project dependencies
     

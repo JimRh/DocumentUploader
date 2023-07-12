@@ -74,13 +74,13 @@ def process_document(filename,location,wordlength):
         if i=='.':
             i.replace(i,i+' ')
         words = i.split(" ")
-    print(words)
+
     for word in words:
         cleaned_word = re.sub(r'[^\w\s]', '',
                               word)
         if cleaned_word:
             new_word_list.append(cleaned_word)
-    print(new_word_list)
+
     wordlength=int(wordlength)
     cnt=0
     for word in new_word_list:
