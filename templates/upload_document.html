@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Uploader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .custom-file {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .custom-file-input {
+            position: absolute;
+            font-size: 100px;
+            opacity: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .custom-file-label {
+            display: inline-block;
+            padding: 8px 12px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: .25rem;
+        }
+
+        .custom-file-label:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+        .custom-file-label:active {
+            background-color: #005cbf;
+            border-color: #0056b3;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+            border-radius: .25rem;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Uploader</h1>
+    <hr>
+    <form action="/uploaddocument" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="custom-file">
+                <input type="file" class="custom-file-input" name="document" id="document" required>
+                <span class="custom-file-label">Select Document...</span>
+
+            </label>
+            <input type="number" name="wordlength" placeholder="Word Length" min="1" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</body>
+</html>
